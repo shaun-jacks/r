@@ -3,6 +3,7 @@ FROM rocker/binder
 ## Copies your repo files into the Docker Container
 USER root
 
+RUN apt-get update
 RUN apt-get -y install software-properties-common && apt-get -y update
 RUN add-apt-repository ppa:marutter/c2d4u3.5 && apt-get -y update
 
