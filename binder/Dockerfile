@@ -3,6 +3,9 @@ FROM rocker/binder
 ## Copies your repo files into the Docker Container
 USER root
 
+RUN add-apt-repository ppa:marutter/c2d4u3.5 && apt-get update
+
+
 RUN apt-get install r-cran-lme4
 RUN apt-get install r-cran-nlme
 
