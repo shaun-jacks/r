@@ -1,2 +1,7 @@
 install.packages('lme4')
-install.packages("nlme")
+install.packages('tidyverse')
+install.packages('kableExtra')
+install.packages('psych')
+install.packages('car')
+install.packages('ggplot2')
+install.packages('ggpubr')
